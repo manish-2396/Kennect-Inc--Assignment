@@ -1,20 +1,67 @@
-// Write an implementation of getElementByld, which performs the same basic task as
-// that of actual getElementByld, (don't use shortcuts like queryselector)
+// Demonstrate following concepts using any programming language —
+// - For, While, Continue, If, Else, Switch
 
-const getElementById = function (id) {
-  let result = "";
-  function getIDNode(node) {
-    if (node.id === id) {
-      result = node;
-    }
-    for (let i = 0; i < node.childNodes.length; i++) {
-      getIDNode(node.childNodes[i]);
-    }
+let sum = 0;
+
+for (let i = 0; i < 5; i++) {
+  sum += i;
+}
+
+console.log(sum);
+let ans = [];
+
+let i = 1;
+while (i <= 10) {
+  ans.push(i * 24);
+  i++;
+}
+
+console.log(ans);
+
+let result = true;
+
+if (result) {
+  console.log("True");
+} else {
+  console.log("False");
+}
+
+let data = 0;
+
+function test(data) {
+  switch (data) {
+    case 0:
+      return "Zero";
+    case 1:
+      return "One";
+    default:
+      return "Greater than One or not a number";
+  }
+}
+console.log(test(data));
+
+// - Recursion
+
+function fatorial(num) {
+  if (num === 1) {
+    return 1;
   }
 
-  getIDNode(document.body);
-  console.log(result);
-  return result;
-};
+  return num * fatorial(num - 1);
+}
 
-getElementById("container").innerHTML = "Hi I am Manish";
+console.log(fatorial(7));
+// - Binary Search Tree
+
+
+// - Closure
+
+function Closure(a) {
+  return function (b) {
+    return a + b;
+  };
+}
+
+let ans1 = Closure(5)(8);
+
+console.log(ans1);
