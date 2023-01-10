@@ -1,3 +1,5 @@
+// Write an implementation of getElementByld, which performs the same basic task as
+// that of actual getElementByld, (don't use shortcuts like queryselector)
 
 const getElementById = function (id) {
   let result = "";

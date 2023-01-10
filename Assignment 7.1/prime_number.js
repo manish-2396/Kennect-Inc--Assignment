@@ -1,3 +1,6 @@
+// Given a number x, find out if it is a prime number or not , use javascript and find out the
+// difference between Next prime number after X and X
+
 const isPrimeNumberorNot = (num) => {
   let count = 0;
 
@@ -39,4 +42,6 @@ function findPrimeorNextPrime(num) {
   );
 }
 
-findPrimeorNextPrime(101);
+let x = 101
+
+findPrimeorNextPrime(x);

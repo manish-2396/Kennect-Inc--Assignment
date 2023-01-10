@@ -1,4 +1,5 @@
-// for , while , continue , if , else , switch
+// Demonstrate following concepts using any programming language —
+// - For, While, Continue, If, Else, Switch
 
 let sum = 0;
 
@@ -39,7 +40,7 @@ function test(data) {
 }
 console.log(test(data));
 
-// Recursion
+// - Recursion
 
 function fatorial(num) {
   if (num === 1) {
@@ -50,8 +51,10 @@ function fatorial(num) {
 }
 
 console.log(fatorial(7));
+// - Binary Search Tree
 
-//Closure
+
+// - Closure
 
 function Closure(a) {
   return function (b) {
